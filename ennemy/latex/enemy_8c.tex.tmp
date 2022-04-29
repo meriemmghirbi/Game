@@ -1,0 +1,174 @@
+\hypertarget{enemy_8c}{}\section{enemy.\+c File Reference}
+\label{enemy_8c}\index{enemy.\+c@{enemy.\+c}}
+
+
+Testing Program.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\\*
+Include dependency graph for enemy.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structEnemy}{Enemy} \hyperlink{enemy_8c_a0abb5a003f01a60ea1add12f656d8d55}{Init\+Enemy} (\hyperlink{structEnemy}{Enemy} Ennemie)
+\begin{DoxyCompactList}\small\item\em To initialize the \hyperlink{structEnemy}{Enemy} Ennemie. \end{DoxyCompactList}\item 
+\hyperlink{structhero}{hero} \hyperlink{enemy_8c_a974760890164c8056b271859d465eca1}{inithero} (\hyperlink{structhero}{hero} h)
+\begin{DoxyCompactList}\small\item\em To initialize the hero h. \end{DoxyCompactList}\item 
+void \hyperlink{enemy_8c_a147ac23bc7358728547ed1c454a81c96}{Afficher\+Enemy} (\hyperlink{structEnemy}{Enemy} Ennemie, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To affiche the \hyperlink{structEnemy}{Enemy} Ennemie . \end{DoxyCompactList}\item 
+\hyperlink{structEnemy}{Enemy} \hyperlink{enemy_8c_aa32e8dbc0b81da328949a43fcedffacd}{Animate\+Enemy} (\hyperlink{structEnemy}{Enemy} Ennemie, int l)
+\begin{DoxyCompactList}\small\item\em To animate the \hyperlink{structEnemy}{Enemy} Ennemie . \end{DoxyCompactList}\item 
+\hyperlink{structEnemy}{Enemy} \hyperlink{enemy_8c_a9c99ed5e89f5f1a3670f9fc309e6b6f0}{moveenemy} (\hyperlink{structEnemy}{Enemy} Ennemie, int l)
+\begin{DoxyCompactList}\small\item\em To mov the \hyperlink{structEnemy}{Enemy} Ennemie . \end{DoxyCompactList}\item 
+int \hyperlink{enemy_8c_af4abfc5f411e87b53d30b74b18f8bc28}{colusion} (\hyperlink{structEnemy}{Enemy} Ennemie, \hyperlink{structhero}{hero} h)
+\begin{DoxyCompactList}\small\item\em To colusion the \hyperlink{structEnemy}{Enemy} Ennemie . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Testing Program. 
+
+\begin{DoxyAuthor}{Author}
+C Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Apr 20, 2021
+\end{DoxyDate}
+Testing program for enemy $\ast$
+
+\subsection{Function Documentation}
+\index{enemy.\+c@{enemy.\+c}!Afficher\+Enemy@{Afficher\+Enemy}}
+\index{Afficher\+Enemy@{Afficher\+Enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{Afficher\+Enemy(\+Enemy Ennemie, S\+D\+L\+\_\+\+Surface $\ast$screen)}{AfficherEnemy(Enemy Ennemie, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void Afficher\+Enemy (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy}}]{Ennemie, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_a147ac23bc7358728547ed1c454a81c96}{}\label{enemy_8c_a147ac23bc7358728547ed1c454a81c96}
+
+
+To affiche the \hyperlink{structEnemy}{Enemy} Ennemie . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scren} & the screen \\
+\hline
+{\em Ennemie} & the \hyperlink{structEnemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\index{enemy.\+c@{enemy.\+c}!Animate\+Enemy@{Animate\+Enemy}}
+\index{Animate\+Enemy@{Animate\+Enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{Animate\+Enemy(\+Enemy Ennemie, int l)}{AnimateEnemy(Enemy Ennemie, int l)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} Animate\+Enemy (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy}}]{Ennemie, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_aa32e8dbc0b81da328949a43fcedffacd}{}\label{enemy_8c_aa32e8dbc0b81da328949a43fcedffacd}
+
+
+To animate the \hyperlink{structEnemy}{Enemy} Ennemie . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ennemie} & the \hyperlink{structEnemy}{Enemy} \\
+\hline
+{\em l} & the l \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ennemie 
+\end{DoxyReturn}
+\index{enemy.\+c@{enemy.\+c}!colusion@{colusion}}
+\index{colusion@{colusion}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{colusion(\+Enemy Ennemie, hero h)}{colusion(Enemy Ennemie, hero h)}}]{\setlength{\rightskip}{0pt plus 5cm}int colusion (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy}}]{Ennemie, }
+\item[{{\bf hero}}]{h}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_af4abfc5f411e87b53d30b74b18f8bc28}{}\label{enemy_8c_af4abfc5f411e87b53d30b74b18f8bc28}
+
+
+To colusion the \hyperlink{structEnemy}{Enemy} Ennemie . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ennemie} & the \hyperlink{structEnemy}{Enemy} \\
+\hline
+{\em h} & the hero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+col 
+\end{DoxyReturn}
+\index{enemy.\+c@{enemy.\+c}!Init\+Enemy@{Init\+Enemy}}
+\index{Init\+Enemy@{Init\+Enemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{Init\+Enemy(\+Enemy Ennemie)}{InitEnemy(Enemy Ennemie)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} Init\+Enemy (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy}}]{Ennemie}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_a0abb5a003f01a60ea1add12f656d8d55}{}\label{enemy_8c_a0abb5a003f01a60ea1add12f656d8d55}
+
+
+To initialize the \hyperlink{structEnemy}{Enemy} Ennemie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ennemie} & the \hyperlink{structEnemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ennemie 
+\end{DoxyReturn}
+\index{enemy.\+c@{enemy.\+c}!inithero@{inithero}}
+\index{inithero@{inithero}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{inithero(hero h)}{inithero(hero h)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hero} inithero (
+\begin{DoxyParamCaption}
+\item[{{\bf hero}}]{h}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_a974760890164c8056b271859d465eca1}{}\label{enemy_8c_a974760890164c8056b271859d465eca1}
+
+
+To initialize the hero h. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & the hero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+h 
+\end{DoxyReturn}
+\index{enemy.\+c@{enemy.\+c}!moveenemy@{moveenemy}}
+\index{moveenemy@{moveenemy}!enemy.\+c@{enemy.\+c}}
+\subsubsection[{\texorpdfstring{moveenemy(\+Enemy Ennemie, int l)}{moveenemy(Enemy Ennemie, int l)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy} moveenemy (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy}}]{Ennemie, }
+\item[{int}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{enemy_8c_a9c99ed5e89f5f1a3670f9fc309e6b6f0}{}\label{enemy_8c_a9c99ed5e89f5f1a3670f9fc309e6b6f0}
+
+
+To mov the \hyperlink{structEnemy}{Enemy} Ennemie . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ennemie} & the \hyperlink{structEnemy}{Enemy} \\
+\hline
+{\em l} & the l \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ennemie 
+\end{DoxyReturn}
